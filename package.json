@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/clcain/vthacks-translator-api/issues"
   },
-  "homepage": "https://github.com/clcain/vthacks-translator-api#readme"
+  "homepage": "https://github.com/clcain/vthacks-translator-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "aws-sdk": "^2.388.0"
+  }
 }
