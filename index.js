@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
 
 app.post("/translate", (req, res) => {
     let translator = new aws.Translate({ region: "us-east-1" });
+    console.log(`Translating: \"${req.body.Text}\" (${req.body.SourceLanguageCode} -> ${req.body.TargetLanguageCode})`);
     translator.translateText({
         "Text": req.body.Text,
         "SourceLanguageCode": req.body.SourceLanguageCode,
@@ -28,5 +29,5 @@ app.post("/translate", (req, res) => {
 });
 
 app.listen(80, () => {
-    console.log("Application is running.");
+    console.log("Translate API is running.");
 });
