@@ -27,6 +27,6 @@ app.post("/translate", (req, res) => {
     });
 });
 
-app.listen(8000, () => {
+app.listen(80, () => {
     console.log("Application is running.");
 });
